@@ -1,0 +1,6 @@
+{
+  "name": "Trình Đọc & Tách SRT",
+  "description": "Ứng dụng web giúp đọc, xem, trích xuất văn bản và tách các tệp phụ đề SRT.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
