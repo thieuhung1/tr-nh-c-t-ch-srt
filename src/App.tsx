@@ -1,7 +1,7 @@
 import { GoogleGenAI } from '@google/genai';
 import { FileText, Download, Scissors, UploadCloud, FileDown, Type, ChevronRight, RefreshCw, Music, Sparkles } from 'lucide-react';
 import React, { useState, useRef, useEffect } from 'react';
-import { motion } from 'motion/react';
+import { motion } from "motion/react"
 
 export interface Subtitle {
   id: string;
@@ -279,11 +279,7 @@ export default function App() {
 
       <main className="flex flex-1 overflow-hidden relative">
         {subtitles.length === 0 && !audioUrl ? (
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="flex-1 flex items-center justify-center p-6"
-          >
+          <div className="flex-1 flex items-center justify-center p-6">
             <div 
               className={`max-w-xl w-full border-2 border-dashed rounded-2xl p-12 text-center transition-all ${isDragging ? 'border-indigo-500 bg-indigo-500/10' : 'border-slate-800 bg-slate-900/50 hover:border-slate-700'}`}
               onDrop={handleDrop}
@@ -313,7 +309,7 @@ export default function App() {
                 CHỌN TỆP TỪ XA
               </button>
             </div>
-          </motion.div>
+          </div>
         ) : (
           <div className="flex flex-1 flex-col lg:flex-row w-full overflow-hidden">
             <motion.div 
